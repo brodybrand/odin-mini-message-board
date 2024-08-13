@@ -1,0 +1,22 @@
+<%- include('navbar', {links: links}) %>
+<form action="/new" method="POST">
+  <h3>New Message</h3>
+  <label for="messageAuthor"
+    >Author
+    <input
+      type="messageAuthor"
+      name="messageAuthor"
+      id="messageAuthor"
+      placeholder="Author"
+    />
+  </label>
+  <label for="messageText"
+    >Message
+    <textarea
+      name="messageText"
+      id="messageText"
+      placeholder="Your message here."
+    ></textarea>
+  </label>
+  <button type="submit">Send</button>
+</form>
